@@ -1,0 +1,210 @@
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Dancing+Script:wght@700&family=Griffy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none!important;
+    text-transform: capitalize!important;   
+   
+}
+
+body{
+    /* background-color: #000; */
+    /* z-index: -111; */
+    background: url(/assets/images/bg_4.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+img{
+    transform: scale(1);
+}
+.font-span{
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+#back-top{
+    background:#e22a33;
+    height:50px;width:50px;
+    right:31px;bottom:18px;
+    position:fixed;color:#fff;
+    font-size:20px;text-align:center;
+    border-radius:50%;
+    line-height:48px;
+    border:2px solid transparent;
+    box-shadow:0 0 10px 3px rgba(75, 66, 66, 0.2)
+}
+
+#back-top a .fa-level-up-alt{
+    color:white;
+}
+input:focus {
+    border: none;
+    outline: none;
+  }
+  
+#story{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url(/assets/images/bg_4.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+.about-Left-Photo{
+    height: auto;
+    background: url(/assets/images/about.jpg) no-repeat center ;
+    background-size: cover;
+}
+
+.bac2{
+    height: auto;
+    background: url(/assets/images/bg_4.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+.story-text{
+    background: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4))!important ;
+    /* position: absolute;
+    left: 0px!important;
+    top: 80px; */
+    padding: 40px;
+    line-height: 30px;
+}
+
+.story-text p{
+    color: #7f7f7f;
+}
+
+
+
+
+.title-text p {
+    font-size: 17px;
+    margin-top: 80px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #808080;
+
+}
+.title-text h2.big {
+    position: relative;
+    top: 30px;
+    font-size: 50px;
+    font-family: 'Dancing Script',cursive!important;
+    z-index: 1!important;
+    color: #c29963;
+    opacity: 1;
+}
+.title-text h1{
+    font-size: 40px;
+    font-weight: 700;
+    z-index: 11!important;
+    text-transform: uppercase!important;
+    letter-spacing: 3px;
+    padding: 0;
+
+
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+#brown{
+    width: 100%;
+    height: auto;
+    background-color: #C49B63;
+
+}
+.brown-data{
+    margin-top: 120px!important;
+}
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+.count{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,
+    url(/assets/images/bg_2.jpg) no-repeat fixed center ;
+    background-size: cover;
+    
+}
+.count h1{
+    color: #C49B63;
+}
+.count p{
+    color: #bebebe;
+}
+  
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 0; 
+
+}
+.icon:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    bordeR: 1px solid #c49b63;
+    z-index: -1;
+    transition: all 0.3s ease; 
+}
+.icon span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: #c49b63;
+ }
+ .count-text1:hover .icon .fa-coffee{
+     color: #000!important;
+ }
+ .count-text1:hover .icon:after {
+     color: #000!important;
+     transform: rotate(135deg);
+     background: #c49b63; 
+     transition: all 0.8s ease;    
+ }
+ .fa-coffee{
+     color: #fff;
+ }
+ /* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+.hh{
+    height: 80px;
+    /* background-color: #000; */
+    /* z-index: -111; */
+    background: url(/assets/images/bg_4.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+#gallary{
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* margin-top: 150px; */
+}
+.gallary-img{
+    height: 350px;
+    background: no-repeat center;
+    background-size: cover;
+}
+ /* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */

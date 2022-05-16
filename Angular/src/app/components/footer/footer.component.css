@@ -1,0 +1,28 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-color:#120f0f;
+    
+}
+
+.footer-about p{
+    font-size: 19px;
+    line-height: 30px;
+    color: #7f7f7f;
+}
+.social .footer-icon{
+    font-size: 30px!important;
+    margin: 0 15px;
+}
+.footer-text ul {
+    list-style: none;
+}
+.footer-text ul li a{
+    color: #7f7f7f!important;
+    font-size: 18px;
+    text-decoration: none!important;
+    /* margin-top: 50px!important; */
+}
+.QUESTIONS p  {
+    color: #7f7f7f!important;
+}

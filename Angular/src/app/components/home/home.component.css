@@ -1,0 +1,98 @@
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+.cart{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url(/assets/images/bg_4.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+.cart-container{
+padding: 0 10px;
+margin: 0;
+
+}
+
+.card-img img{
+    width:100%!important;
+    border-radius: 5px;
+}
+.card-title{
+    letter-spacing: 2px;
+}
+.paragraph-2{
+    color: #fff!important;
+}
+
+.card-butn{
+border: 1px solid #C49B63;
+border-radius: 0px;
+color: #C49B63;
+transition: all 0.8s ease;
+padding: 10px 15px;
+
+}
+.card-butn:hover{
+    border: 1px solid #C49B63;
+    border-radius: 0px;
+    color: #fff;
+    background-color: #C49B63;
+
+}
+ /* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+
+.modal{
+    /* margin-top: 180px; */
+    z-index: 1111111111111111111111111111;
+   
+}
+.modal form input,.modal form textarea{
+    border: none;
+    border-bottom: 1px solid #C49B63;
+    color: #ddd;
+    background-color: transparent;
+    margin-bottom: 30px;
+    box-shadow: none !important;
+}
+.modal form label{
+    color: #C49B63;
+}
+.modal form input::placeholder,
+.modal form textarea::placeholder{
+
+    color: white!important;
+
+}
+.popupform{
+    z-index: 11111111111111111111; 
+    /* background-color: #C49B63; */
+    background: url(/assets/images/bg_4.jpg) no-repeat fixed center;
+    background-size: cover;
+    border-radius: 0px;
+ }
+
+
+
+ /* /////////////////////////////////// */
+ .fixDiv{
+    position: fixed;
+    left: 20px;
+    top: 90px;
+    width: 40px!important;
+    height: 40px!important;
+    border: 1px solid #c29963;
+    color: #fff;
+    cursor: pointer;
+    z-index: 111;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px!important;
+    padding: 10px;
+    border-radius: 50%;
+
+    background-color: transparent;
+    box-shadow: 0 0 2px #444444;
+    text-shadow: 0 0 1px #444444;
+}
+

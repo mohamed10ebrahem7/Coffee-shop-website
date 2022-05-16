@@ -1,0 +1,167 @@
+
+<!-- [routerLink]="[ '/','insert']" -->
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<section class="cart bac " id="cart">
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <div class=" title-text text-center ">
+        <h2 class="big">Discover</h2>
+        <h1 class="mb-4 text-light">BEST COFFEE SELLERS</h1>
+        <p class="m-0 p-0 mt-3">Far far away, behind the word mountains,
+           far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+      <!-- //////////////////////////////////////////////// -->
+  
+      <div class="row col-lg-12">
+        <!-- ///////////////////////////////////////////////// -->
+        <div class="col-lg-3 col-md-6  mt-5 mb-5 cart-container" *ngFor="let p of products">
+            <div class=" card-img ">
+                <img class="img-fluid  " src="{{p.image}}" alt="">
+            </div>
+            <div>
+                <div class="card-body  text-center">
+                    <h5 class="card-title text-light">{{p.name}}</h5>
+                    <p class="card-text text-muted paragraph-1 ">
+                      {{p.description}}</p>
+                    <p class="card-text text-muted paragraph-2 h5  ">${{p.price}}</p>
+                     <!-- <td><a class="btn btn-primary"  routerLink="/home/{{p.id}}">Delete</a> </td> -->
+                     <button class="btn card-butn me-3" (click)="Deleteprod(p.id)" >Delete</button>
+                     <!-- <a  routerLink="/edit/{{p.id}}" class="btn card-butn px-4">Edit</a><br/> -->
+                     <button class="btn card-butn px-4"  (click)="Edit(p)"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Edit
+                    </button>
+                    
+                    <button class="btn card-butn  m-3" (click)="increaseCount()" >Add to cart</button>
+
+                    <!-- (click)="submit(p.id)" [id]="p" -->
+                   <!-- <a href="pages/single-product.html"> <button class="btn card-butn"> add a cart </button> </a> -->
+                </div> 
+            </div>
+
+        </div>
+        <button class="btn card-butn px-4"  data-bs-toggle="modal" (click)="AddProd()" data-bs-target="#staticBackdrop">
+          Add New Product
+        </button>
+        
+        <!-- <a href="/insert"  class="btn card-butn">Add New Product</a><br/> -->
+
+        <!-- ///////////////////////////////////////////////// -->
+  
+        
+       
+      </div>
+      <br><br><br>
+    </div> 
+    
+  </section>
+  <!-- //////////////modal//////////////////////////////////////////////////////////////////////////// -->
+  
+  
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content popupform">
+      <div class="modal-header">
+        <h5 class="modal-title text-light" id="staticBackdropLabel" >Item Data</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          
+          <form [formGroup]="form"  >
+              
+              <div class="form-group">
+                  <input
+                  formControlName="id"
+                      id="Id"
+                      type="number"
+                      class="form-control"
+                      hidden>
+              </div>
+              
+              <div class="form-group">
+                  <label for="Name">Name</label>
+                  <input
+                      formControlName="name"
+                      id="Name"
+                      type="text"
+                      class="form-control">
+                  <div *ngIf="f['name'].touched && f['name'].invalid" class="alert alert-danger">
+                      <div *ngIf="f['name'].errors && f['name'].errors['required']">Name is required.</div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="Price">Price</label>
+                  <input
+                      formControlName="price"
+                      id="Price"
+                      type="text"
+                     
+
+                      class="form-control"
+                      >
+                  <div *ngIf="f['price'].touched && f['price'].invalid" class="alert alert-danger">
+                    <div *ngIf="f['price'].errors && f['price'].errors['required']">Name is required.</div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="Image">Image</label>
+                  <input
+                      formControlName="image"
+                      id="Image"
+                      type="text"
+                    
+
+                      class="form-control">
+                  <div *ngIf="f['image'].touched && f['image'].invalid" class="alert alert-danger">
+                    <div *ngIf="f['image'].errors && f['image'].errors['required']">Name is required.</div>
+                  </div>
+              </div>
+              
+              <div class="form-group">
+                  <label for="Description">Description</label>
+                  <textarea
+                      formControlName="description"
+                      id="Description"
+                      type="text"
+                     
+
+                      class="form-control">
+                  </textarea>
+                  <div *ngIf="f['description'].touched && f['description'].invalid" class="alert alert-danger">
+                      <div *ngIf="f['description'].errors && f['description'].errors['required']">Description is required.</div>
+                  </div>
+                </div>
+              <!-- <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Update</button> -->
+              
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer border border-0">
+          <button type="button" class="btn card-butn" data-bs-dismiss="modal">Close</button>
+          <button *ngIf="btnUpdateShow" type="submit " class="btn card-butn " data-bs-dismiss="modal" [disabled]="!form.valid" (click)="submit()" >Update</button>
+          <button *ngIf="btnSaveShow" type="submit" class="btn card-butn " data-bs-dismiss="modal" [disabled]="!form.valid" (click)="AddProd2()" >Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div  class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="exampleModal">
+  <app-login (LogEvent)="getUser($event)"></app-login>
+</div>
+
+<!-- /////////////////////////////////////////////////////// -->
+
+<!-- Button trigger modal -->
+
+
+<div class="fixDiv">{{cnt}}</div>

@@ -1,0 +1,51 @@
+
+
+<!-- ! ---------------------------------------  login page  ----------------------------------------! -->
+<!-- ! ---------------------------------------  login page  ----------------------------------------! -->
+<!-- Modal -->
+
+    <div class="modal-dialog">
+      <div class="modal-content loginSection">
+        <div class="modal-header border border-0" >
+            
+            <button type="button" class="btn-close text-light" style="background-color: #c49b63;" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        <div class="modal-body m-auto  text-center">
+            
+                <h3 class="text-light mt-5"> log in <span class="neon" data-text="kahwa" > kahwa </span>  </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reprehenderit? </p>                
+                
+                <form [formGroup]="form" (ngSubmit)="submit()">
+                    <div class="row">
+                        <div class="col-lg-12 mt-5">
+                            <input type="text" class=" fill-input text-left form-control col-lg-11 m-auto" 
+                            formControlName="Email"  
+                            maxlength="30" placeholder="Email">
+                            <div *ngIf="f['Email'].touched && f['Email'].invalid" class="alert alert-danger">
+                                <div *ngIf="f['Email'].errors && f['Email'].errors['required']">Email is required.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-5">
+                            <input type="password" class=" fill-input form-control col-lg-11 m-auto" 
+                            formControlName="Password" maxlength="20"  placeholder="Password">
+                            <div *ngIf="f['Password'].touched && f['Password'].invalid" class="alert alert-danger">
+                                <div *ngIf="f['Password'].errors && f['Password'].errors['required']">Password is required.</div>
+                        </div>
+
+                         <div class="col-lg-12 mt-3">
+                            <button type="submit" class="butn1" [disabled]="!form.valid" data-bs-dismiss="modal" > Login </button>
+                        </div>
+                    </div>
+
+                    <p>Don't Have An Account? <a class="targetLink" routerLink="/insert-user">Signup</a>  </p>
+                    <p>back to  <a class="targetLink" routerLink="">home</a>  </p>
+                    
+                    </div>
+                </form>
+            
+            </div>
+        
+         </div>
+    </div>
+

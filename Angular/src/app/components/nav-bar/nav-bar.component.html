@@ -1,0 +1,50 @@
+
+<section class="header " id="header">
+  <div class="overlay">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100 p-2" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Kahwa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-md-auto gap-2">
+            <li class="nav-item active">
+              <a class="nav-link " aria-current="page" routerLink=""
+              routerLinkActive="ActiveClass" [routerLinkActiveOptions]="{exact: true}">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" routerLink="/home"
+              routerLinkActive="ActiveClass" [routerLinkActiveOptions]="{exact: true}">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/insert-user" routerLinkActive="ActiveClass">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+  <!-- END nav -->
+  <div>
+      <div class="container m-auto">
+          <div class="row justify-content-center align-items-center">
+              <div class="col-md-8 col-sm-12 text-center welcomeText">
+                   <p class="p-1">welcome</p>
+                   <h1>The Best Coffee Testing Experience</h1>
+                   <p class="p-2">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                   
+                   <button type="button" class="btn butn1 activeButn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">order now</button>
+
+                   <a href=""><button class="btn butn1 p-3  m-1"> view menu </button></a> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+

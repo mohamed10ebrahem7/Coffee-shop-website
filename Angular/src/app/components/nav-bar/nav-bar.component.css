@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Dancing+Script:wght@700&family=Griffy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none!important;
+    text-transform: capitalize!important;   
+   
+}
+body{
+    background-color: #fff;
+    /* z-index: -111; */
+    background: url(/assets/images/bg_4.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+img{
+    transform: scale(1);
+}
+.font-span{
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+#back-top{
+    background:#e22a33;
+    height:50px;width:50px;
+    right:31px;bottom:18px;
+    position:fixed;color:#fff;
+    font-size:20px;text-align:center;
+    border-radius:50%;
+    line-height:48px;
+    border:2px solid transparent;
+    box-shadow:0 0 10px 3px rgba(75, 66, 66, 0.2)
+}
+
+#back-top a .fa-level-up-alt{
+    color:white;
+}
+input:focus {
+    border: none;
+    outline: none;
+  }
+/* .bac{
+    width: 100%;
+    background: url(../images/bg_4.jpg) no-repeat fixed center;
+    background-size: cover;
+} */
+.header{       
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+    background:
+    url(/assets/images/bg_2.jpg) no-repeat center fixed;
+    background-size: cover;
+}   
+.overlay{
+    width: 100wh;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6))!important ;
+    background-size: contain;
+}
+.navbar{
+    background-color: transparent;
+    padding: 20px 5px;
+    border-bottom: 1px solid #F1EFED;
+    z-index: 11111;
+    background: linear-gradient(rgba(0,0,0,0.9) , rgba(0,0,0,0.9))!important ;
+
+
+}
+.navbar-brand{
+    font-size: 40px;
+    font-family: 'Frijole', cursive;
+    /* font-family: 'Niconne', cursive; */
+    font-weight: 500;
+    color: #C49B63!important;
+}
+.nav-link{
+    text-transform: uppercase!important;
+    cursor: pointer!important;
+    font-size: 14px;
+    margin: 5px;
+    color: #F1EFED!important;
+    font-weight: 400;
+    transition: all 0.6s ease;
+}
+.activelink{
+    color: #C49B63!important;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color:#C49B63!important;
+}
+dropdown-pages
+/* ////////////////////// */
+nav.sticky {
+    background-color: #151111!important;
+    transition: 0.5s!important;
+    z-index: 11111111111111111111111111;
+    opacity: 1!important;
+    padding: 0px 15px!important;
+
+}
+nav.sticky .navbar-brand{
+    font-size: 30px!important;
+}
+/* //////////////////////*/
+.welcomeText{
+    /* background-color: brown; */
+    color: white;
+    margin-top: 130px;
+}
+.welcomeText .p-1{
+    font-size: 40px;
+    font-family: 'Niconne', cursive!important;
+    color:#C49B63 ;
+    font-weight: 400;
+}
+.welcomeText h1{
+    font-size: 45px;
+    letter-spacing: 5px;
+    color:#fafafa ;
+    font-weight: 400;
+    
+}
+.welcomeText .p-2{
+    font-size: 17px;
+    color:#F1EFED ;
+    font-weight: 400;
+}
+.butn1{
+    background-color: transparent;
+    border: 1px solid #F1EFED;
+    border-radius: 0px;
+    color: #F1EFED;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 30px!important;
+    transition: all 0.6s ease;
+
+}
+.activeButn{
+    background-color: #C49B63;
+    border: 1px solid #C49B63;
+    border-radius: 0px;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 30px!important;
+    transition: all 0.6s ease;
+
+
+}
+.butn1:hover{
+    background-color: #C49B63;
+    border: 1px solid #C49B63;
+    color: #000; 
+}
+.activeButn:hover{
+    background-color: transparent;
+    border: 1px solid #C49B63;
+    color: #C49B63;
+ }

@@ -1,0 +1,72 @@
+
+<!-- ! ---------------------------------------  sign up page  ----------------------------------------! -->
+<!-- ! ---------------------------------------  sign up page  ----------------------------------------! -->
+<section class="signupSection" id="signupSection" >
+    <div class="container-fluid h-100 ">
+        <div class="row m-auto h-100">
+            <div class="col-lg-6  m-auto MainLogin text-center">
+                
+                
+                <h3 class="text-light mt-2"> sign up to <span class="neon" data-text="kahwa" > kahwa </span>  </h3>
+                
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reprehenderit? </p>                
+                        <p>back to  <a class="targetLink" routerLink="">home</a>  </p>
+                    
+                <form [formGroup]="form" (ngSubmit)="submit()">
+
+                    <div class="row ">
+                            <div class="col-lg-6 mt-5 ">
+                                <input  type="text" class="form-control col-lg-10 mx-auto bg-danger" 
+                                formControlName="Name" placeholder="Name">
+                                <div *ngIf="f['Name'].touched && f['Name'].invalid" class="alert alert-danger">
+                                    <div *ngIf="f['Name'].errors && f['Name'].errors['required']">Name is required.</div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="col-lg-6 mt-5">
+                                <input type="email" class="form-control col-lg-10 mx-auto" 
+                                formControlName="Email" placeholder="Email">
+                                <div *ngIf="f['Email'].touched && f['Email'].invalid" class="alert alert-danger">
+                                <div *ngIf="f['Email'].errors && f['Email'].errors['required']">Email is required.</div>
+                                </div>
+                            </div>
+                     </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 mt-5">
+                                <input type="number" class="form-control col-lg-12 m-auto"
+                                formControlName="Phone" placeholder="Phone Number">
+                                <div *ngIf="f['Phone'].touched && f['Phone'].invalid" class="alert alert-danger">
+                                    <div *ngIf="f['Phone'].errors && f['Phone'].errors['required']">Phone is required.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 mt-5">
+                                <input type="password" class="form-control col-lg-12 m-auto"
+                                formControlName="Password" placeholder="Password">
+                                <div *ngIf="f['Password'].touched && f['Password'].invalid" class="alert alert-danger">
+                                    <div *ngIf="f['Password'].errors && f['Password'].errors['required']">Password is required.</div>
+                                </div>
+                            </div>
+                        </div>
+ 
+                            
+
+
+                        <div class="col-lg-12 mt-3">
+                            <button type="submit" class="butn1" [disabled]="!form.valid"> Add </button>
+                        </div>
+
+                        <p> Back To <a class="targetLink mt-5" routerLink="/login">login</a></p>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ! ---------------------------------------  sign up page  ----------------------------------------! -->
+<!-- ! ---------------------------------------  sign up page  ----------------------------------------! -->
+
+

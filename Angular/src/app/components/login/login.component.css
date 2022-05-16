@@ -1,0 +1,138 @@
+
+
+
+
+.loginSection {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background:url("/assets/images/bg_4.jpg") no-repeat center fixed,
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+}
+
+.targetLink{
+    color: #ddd!important ;
+    text-decoration: none;
+}
+
+.loginSection {
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+
+}
+
+.loginSection h3 {
+    color: #C49B63 !important;
+    font-family: 'Gaegu', cursive;
+}
+
+.loginSection p {
+    color: #C49B63;
+    font-family: 'Gaegu', cursive;
+}
+
+.loginSection form input {
+    background-color: transparent !important;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #C49B63 !important;
+    border-radius: 0;
+    outline: none;
+    box-shadow:none !important;
+}
+
+.loginSection form input:focus {
+    color: #fff;
+    outline: none!important;
+}
+
+.loginSection form input::placeholder {
+    color: #C49B63;
+}
+
+
+
+.neon {
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    filter: brightness(500%);
+
+
+}
+
+.neon::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    right: 0;
+    mix-blend-mode: difference !important;
+    filter: blur(2.5px);
+
+}
+
+.butn1 {
+    width: 180px;
+    background-color: transparent;
+    border: 1px solid #C49B63;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 30px !important;
+    transition: all 0.6s ease !important;
+    letter-spacing: 2px;
+    box-shadow: inset 0 0 0 0 #C49B63!important;
+
+}
+
+.butn1:hover {
+    /* background-color: #C49B63;
+    border: 1px solid #C49B63; */
+        box-shadow: inset 180px 0 0 0 #C49B63!important;
+    color: #000;
+}
+
+.butn2 {
+    background-color: transparent;
+    border: 1.2px solid #C49B63;
+    background-color: transparent;
+    border-radius: 50px;
+    color: #C49B63;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 30px !important;
+    transition: all 0.6s ease;
+    margin-left: 15px;
+    letter-spacing: 2px;
+    position: relative;
+
+}
+.butn2:hover {
+    color: #fff;
+    transition: all 0.6s ease;
+    border: 1.2px solid transparent;
+}
+
+.butn2::before {
+    transition: all 0.6s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+    background-color: #C49B63;
+}
+
+.butn2:hover::before {
+    transition: all 0.6s ease;
+    left: 0;
+  right: 0;
+    opacity: 1;
+    z-index: -1;
+    border-radius: 50px;
+}
